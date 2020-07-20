@@ -10,11 +10,13 @@ body{
     /* flex-direction: row;
     flex-wrap: wrap; */
     flex-flow: row wrap;
+    justify-content: space-around;
+    height: 600px;
+    align-items: center;
 }
 
 .caja{
-    flex-basis: calc((100%/3) -68px );
-    flex-grow: 1;
+    flex-grow:1 ;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -26,23 +28,22 @@ body{
 }
 
 .red{
-    
+    align-self: flex-start;
     background: var(--rojo);
 }
 
 
 .green{
-    
     background: green;
 }
 
 .blue{
-    
+    align-self: flex-end ;
     background: blue;
 }
 
 
 .orange{
-    flex-basis: 100%;
+    
     background: orange;
 }
