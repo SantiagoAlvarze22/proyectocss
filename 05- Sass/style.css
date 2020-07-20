@@ -52,12 +52,31 @@ p {
   background: #eee;
   color: fuchsia;
   padding: 10px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .alert-danger {
   color: red;
+}
+
+.clearfix {
+  clear: both;
+}
+
+h1 {
+  font-size: 25px -1px;
+}
+
+.cajas {
+  width: 900px;
+  margin: 0px auto;
+}
+
+.caja {
+  float: left;
+  width: 22.2222222222%;
+  margin: 10px;
 }
 
 h1 {
