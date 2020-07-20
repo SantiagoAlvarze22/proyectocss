@@ -20,26 +20,28 @@ body{
     border: 4px solid #222;
     margin:10px;
     background: gray;
+    
 }
 
 .red{
-    order: 4;
+    
     background: red;
+    flex-grow: 2;
 }
 
 
 .green{
-    order: 2;
+    
     background: green;
 }
 
 .blue{
-    order:1;
+    
     background: blue;
 }
 
 
 .orange{
-    order: 3;
+   
     background: orange;
 }
