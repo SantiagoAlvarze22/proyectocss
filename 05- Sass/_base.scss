@@ -106,3 +106,28 @@ $tamano_caja: 200px/900px  *100%;
     width:$caja / $wrap * 100%;
     margin: 10px;
 }
+
+//Condicionales - if
+
+// h1{
+//     @if $color-fondo != #ccc{
+//         color:black;
+//     }@else{
+//         color:lightgreen
+//     }
+// }
+
+h1{
+    @if $color-fondo != #ccc{
+        color:black;
+    }@else if $color-fondo==black{
+        color:lightgreen
+    } @else{
+        color: pink;
+    }
+}
+//FOR
+
+//Each
+
+//while
