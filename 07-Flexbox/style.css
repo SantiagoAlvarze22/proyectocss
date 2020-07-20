@@ -31,12 +31,12 @@ body{
 
 
 .green{
-    
+    flex-shrink: 2;
     background: green;
 }
 
 .blue{
-    
+    flex-shrink: 0;
     background: blue;
 }
 
