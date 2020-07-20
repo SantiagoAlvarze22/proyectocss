@@ -64,3 +64,21 @@ p{
     }
 }
 
+//Herencia
+%alert-normal{
+    border: 1px solid gray;
+    background: #eee;
+    color: fuchsia;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.alert{
+    @extend %alert-normal;
+}
+
+.alert-danger{
+    @extend %alert-normal;
+    color: red;
+}
