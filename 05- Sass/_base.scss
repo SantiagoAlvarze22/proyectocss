@@ -111,7 +111,7 @@ $tamano_caja: 200px/900px  *100%;
 
 // h1{
 //     @if $color-fondo != #ccc{
-//         color:black;
+//         color:black; 
 //     }@else{
 //         color:lightgreen
 //     }
@@ -127,6 +127,12 @@ h1{
     }
 }
 //FOR
+$contador: 1;
+@for $contador from 1 through 10 {
+    .listado ul li:nth-child(#{$contador}){
+        font-size:  $contador *5px ;
+    }
+}
 
 //Each
 
