@@ -31,6 +31,10 @@
     flex-basis: 65%;
     padding: 10px;
     margin-left: 20px;
+    font-family:  Helvetica;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
     color: black;
     text-shadow: 1px 1px 0px #ccc;
     text-transform: uppercase;
@@ -158,4 +162,25 @@
 #aside a:hover{
     background: #444;
     color: #eee;
+}
+
+#footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    height: 120px;
+    align-items: center;  
+    border-bottom:1px solid rgba(225, 225, 226, 0.8);
+}
+
+#footer .logo{
+    opacity: 0.5;
+    flex: 1 auto;
+}
+
+#footer .info{
+    flex-grow: 1;   
+    text-align: right;
+    margin-right: 20px;
+    color: rgb(165, 165, 165);
 }
