@@ -3,7 +3,52 @@ body{
     font-family: sans-serif ;
 }
 
+#website{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    width: 75%;
+    height: 100vh;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+#cabecera{
+    grid-column: 1 / 6;
+    background: blue;
+    color: white;
+}
+
+#menu{
+    grid-column: 1 / 6;
+    background: lightblue;
+    color: black;
+}
+
+#contenido{
+    grid-column: 1 / 5;
+    background: #eee;
+}
+
+#contenido article{
+    background:#ccc;
+    border: 1px solid #555;
+}
+
+#lateral{
+    grid-column: 5 / 6;
+    background: orange;
+    color: white;
+}
+
+#pie-pagina{
+    grid-column: 1 / 6;
+    background: black;
+    color: white;
+}
+
 .layout{
+
     width: 1200px;
     margin: 0px auto;
     /*Definir el cotenedor de grid*/
