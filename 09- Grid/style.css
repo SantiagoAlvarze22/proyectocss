@@ -11,7 +11,7 @@ body{
     /* grid-template-columns: repeat(2, calc(25% - 10px)); */
     /* grid-template-columns: repeat(2, calc(25% - 10px)) 25% 25%; */
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr) 3fr;
+    grid-template-rows: repeat(2, 1fr) 3fr repeat(2, 1fr);
 
     /*Espaciado entre los elementos de grid*/
     min-height: 300px;
@@ -36,26 +36,30 @@ body{
 
 .layout  .blue{
     background: blue;
+    grid-column: 2 / 4;
 }
 
 .layout  .green{
     background: green;
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
+    grid-row: 2 / 6;
 }
 
 .layout .pink{
     background: pink;
     /* grid-column-start:1 ;
     grid-column-end: 3; */
-    grid-column: 1 / 3;
-    
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
 }
 
 .layout  .quinta{
     background: blue;
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
 }
 
 .layout .sexta{
     background: orange;
-    grid-column: 1/4;
+    grid-column: 2 / 5;
 }
