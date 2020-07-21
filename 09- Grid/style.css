@@ -8,10 +8,13 @@ body{
     margin: 0px auto;
     /*Definir el cotenedor de grid*/
     display: grid;
-    grid-template-columns: 50% 25%;
+    /* grid-template-columns: repeat(2, calc(25% - 10px)); */
+    grid-template-columns: repeat(2, calc(25% - 10px)) 25% 25%;
+    grid-template-columns: repeat(4, 1fr);
 
     /*Espaciado entre los elementos de grid*/
     grid-gap: 10px;
+    padding: 10px;
     border: 3px solid orangered;
 }
 
