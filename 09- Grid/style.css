@@ -4,6 +4,11 @@ body{
 }
 
 #website{
+    margin: 0px;
+    padding: 0px;
+}
+
+#website{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: 150px 70px 1fr 70px;
@@ -14,9 +19,22 @@ body{
 }
 
 #cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 6;
     background: blue;
     color: white;
+    
+}
+
+
+#menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+    margin: 0px ;
+    padding: 0px;
 }
 
 #menu{
@@ -25,9 +43,15 @@ body{
     color: black;
 }
 
+
 #contenido{
     grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+    padding: 20px;
     background: #eee;
+
 }
 
 #contenido article{
