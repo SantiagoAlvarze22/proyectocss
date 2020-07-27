@@ -22,5 +22,5 @@
 }
 
 .lateral >div {
-    height: 100px;
+    height: calc(250px / 3);
 }
