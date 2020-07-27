@@ -30,3 +30,7 @@
         height: auto;
     }
 }
+#slider{
+    height: 200px;
+    overflow: hidden;
+}
