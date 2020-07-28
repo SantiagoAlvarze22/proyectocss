@@ -280,6 +280,22 @@
             </div>
         </div>
 
+        <!--Barra de Progreso-->
+        <div class="progress mt-5">
+            <div id="barra-progreso" class="progress-bar bg-success w-0 " role="progressbar">
+                0%
+            </div>
+            <script>
+                var contador=0;
+                setInterval(function(){
+                    contador++;
+                    var barra= document.querySelector('#barra-progreso');
+                    barra.style.width = contador + '%'
+                    barra.innerHTML = contador + '%'
+                },1000)
+            </script>
+        </div>
+
     </div>
     <script type="text/javascript" src="Jquery/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
