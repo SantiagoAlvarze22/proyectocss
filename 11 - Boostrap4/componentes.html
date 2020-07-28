@@ -286,26 +286,31 @@
                 0%
             </div>
             <script>
-                var contador=0;
-                setInterval(function(){
+                var contador = 0;
+                setInterval(function () {
                     contador++;
-                    var barra= document.querySelector('#barra-progreso');
+                    var barra = document.querySelector('#barra-progreso');
                     barra.style.width = contador + '%'
                     barra.innerHTML = contador + '%'
-                },1000)
+                }, 1000)
             </script>
         </div>
+        <button type="button" class="btn-tool btn btn-danger" data-toggle="tooltip" data-placement="bottom"
+                title="Aperecerá una alerta">Alerta</button>
 
     </div>
     <script type="text/javascript" src="Jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="Jquery/popper.min.js"></script>
     <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
 
     <script>
         $(document).ready(function () {
             $(".carousel").carousel({
                 interval: 2000
-            })
-        })
+            }),
+
+            $(".btn-tool").tooltip();
+        });
     </script>
 
 </body>
