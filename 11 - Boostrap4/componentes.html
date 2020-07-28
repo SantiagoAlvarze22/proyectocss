@@ -297,8 +297,49 @@
         </div>
         <button type="button" class="btn-tool btn btn-danger" data-toggle="tooltip" data-placement="bottom"
             title="Esto es un tooltip">Alerta</button>
-        <button type="button" class="btn-pop btn btn-success" data-container="body" data-toggle="popover" data-placement="top"
-            data-content="Esto es un PopOver">Alerta</button>
+        <button type="button" class="btn-pop btn btn-success" data-container="body" data-toggle="popover"
+            data-placement="top" data-content="Esto es un PopOver">Alerta</button>
+
+        <hr>
+        <h3>Formulario</h3>
+        <form>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-preprend">
+                        <span class="input-group-text rounded-0">Nombre</span>
+                    </div>
+                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingresa nombre">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="genero">Género</label>
+                <select name="genero" id="genero" class="form-control">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-preprend">
+                        <span class="input-group-text rounded-0">Email</span>
+                    </div>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-preprend">
+                        <span class="input-group-text rounded-0">Password</span>
+                    </div>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Ingresa Password">
+                </div>
+            </div>
+            <input type="submit" class="btn btn-success" value="Enviar">
+        </form>
+
     </div>
     <script type="text/javascript" src="Jquery/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="Jquery/popper.min.js"></script>
